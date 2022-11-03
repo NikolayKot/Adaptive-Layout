@@ -22,8 +22,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 90px;
 }
-.header__logo{
+.logo__link{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -31,8 +32,10 @@ body{
     line-height: 32px;
     letter-spacing: 0.1px;
     color: #252B42;
-    margin-top: 36px;
-    margin-bottom: 0px;
+    text-decoration: none;
+}
+.header__logo{
+    margin: 40px 0px 10px 0px;
 }
 .header__link{
     font-family: 'Montserrat';
@@ -63,4 +66,157 @@ body{
 .header__nav{
     display: flex;
     justify-content: space-around;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstSection__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+}
+.form__logo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+.form__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+.form__input{
+    width: 100%;
+    background: #F9F9F9;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding: 11px 0px 11px 21px;
+}
+.form{
+    width: 245px;
+}
+.select{
+    width: 100%;
+    background: #F9F9F9;
+    border: 1px solid #BDBDBD;      /*Как подвинуть стрелочку?*/
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding: 11px 0px 11px 18px;
+}
+.form__button{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FF7B47;
+    border-radius: 5px;
+    align-self: stretch;
+    cursor: pointer;
+    border-style: none;
+}
+.firstSection__logo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+.firstSection__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.firstSection__container{
+    width: 600px;
+}
+.button__one{
+    padding: 0px;
+    background: #FF7B47;
+    border-radius: 37px;
+    border-style: none;
+    cursor: pointer;
+}
+.one__link{
+    padding: 14px 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.button__two{
+    padding: 9px 1px;
+    border: 1px solid #0D5C63;
+    border-radius: 37px;
+    background-color: rgb(255, 255, 255, 0);
+    cursor: pointer;
+}
+.two__link{
+    padding: 14px 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #0D5C63;
+    text-decoration: none;
+}
+.buttons{
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.form__link{
+    width: 100%;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
 }

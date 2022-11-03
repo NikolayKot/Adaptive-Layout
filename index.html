@@ -14,7 +14,8 @@
     <div class="container">
         <div class="content">
             <header class="header">
-                <h3 class="header__logo">Publist</h3>
+                <!-- <a href="#" class="logo__link"><h3 class="header__logo">Publist</h3></a> -->
+                <h3 class="header__logo"><a href="index.html" class="logo__link">Publist</a></h3>
                 <nav class="header__nav">
                     <a href="#" class="header__link">Home</a>
                     <a href="#" class="header__link">Product</a>
@@ -24,12 +25,48 @@
                     <a href="#" class="header__icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 </nav>
             </header>
+            <section class="firstSection">
+                <div class="firstSection__container">
+                    <h1 class="firstSection__logo">Business Advisory Services Provider</h1>
+                    <p class="firstSection__text">We know how large objects will act, but things on a small scale.</p> 
+                    <div class="buttons">
+                            <button class="button__one"> <a class="one__link" href="#">Get Quote Now</a></button>
+                            <button class="button__two"> <a class="two__link" href="#">Learn More</a></button>
+                    </div> 
+                </div>
+                <form class="firstSection__form" action="#" method="get" enctype="multipart/form-data">
+                    <h3 class="form__logo">Book Appointment</h3>
+                    <div class="form"><p class="form__text">Name*</p></div>
+                    <div class="form">
+                        <input class="form__input" placeholder="Full Name" type="text" name="Name*" value="">
+                    </div>
+                    <div class="form"><p class="form__text">Email*</p></div>
+                    <div class="form">
+                        <input class="form__input" placeholder="example@gmail.com" type="text" name="Email*" value="">
+                    </div>
+                    <div class="form"><p class="form__text">Department*</p></div>
+                    <div class="form">
+                        <select class="select" name="Please select">
+                            <option selected value="#">Please select</option>
+                            <option value="one">Number one</option>
+                            <option value="two">Number two</option>
+                            <option value="three">Number three</option>
+                        </select>
+                    </div>
+                    <div class="form"><p class="form__text">Time*</p></div>
+                    <div class="form">
+                        <select class="select" name="Please select">
+                            <option selected value="4:00">4:00 Available</option>
+                            <option value="5:00">5:00 Available</option>
+                            <option value="8:00">8:00 Available</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <button class="form__button"><a class="form__link" href="#">Book Appointment</a></button>
+                    </div>
+                </form>
+            </section>
         </div>
-        <section class="firstSection">
-            
-        </section>
-
-
     </div>
 </body>
 </html>
