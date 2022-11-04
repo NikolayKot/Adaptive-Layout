@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="css/media-queries.css">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <header class="header">
-                <!-- <a href="#" class="logo__link"><h3 class="header__logo">Publist</h3></a> -->
+    <div class="bg__firstContainer">
+        <header class="header">
+            <div class="container">
                 <h3 class="header__logo"><a href="index.html" class="logo__link">Publist</a></h3>
                 <nav class="header__nav">
                     <a href="#" class="header__link">Home</a>
@@ -24,17 +23,19 @@
                     <a href="#" class="header__icon"><i class="fa fa-search" aria-hidden="true"></i></a>
                     <a href="#" class="header__icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 </nav>
-            </header>
-            <section class="firstSection">
+            </div>
+        </header>
+        <section class="firstSection">
+            <div class="container">
                 <div class="firstSection__container">
                     <h1 class="firstSection__logo">Business Advisory Services Provider</h1>
                     <p class="firstSection__text">We know how large objects will act, but things on a small scale.</p> 
                     <div class="buttons">
-                            <button class="button__one"> <a class="one__link" href="#">Get Quote Now</a></button>
-                            <button class="button__two"> <a class="two__link" href="#">Learn More</a></button>
+                            <button class="button__one">Get Quote Now</button>
+                            <button class="button__two">Learn More</button>
                     </div> 
                 </div>
-                <form class="firstSection__form" action="#" method="get" enctype="multipart/form-data">
+                <form class="firstSection__form" method="get" enctype="multipart/form-data">
                     <h3 class="form__logo">Book Appointment</h3>
                     <div class="form"><p class="form__text">Name*</p></div>
                     <div class="form">
@@ -47,7 +48,7 @@
                     <div class="form"><p class="form__text">Department*</p></div>
                     <div class="form">
                         <select class="select" name="Please select">
-                            <option selected value="#">Please select</option>
+                            <option selected disabled hidden>Please select</option>
                             <option value="one">Number one</option>
                             <option value="two">Number two</option>
                             <option value="three">Number three</option>
@@ -62,11 +63,64 @@
                         </select>
                     </div>
                     <div class="form">
-                        <button class="form__button"><a class="form__link" href="#">Book Appointment</a></button>
+                        <button class="form__button">Book Appointment</button>
                     </div>
                 </form>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
+    <section class="secondSection">
+        <div class="container">
+            <div class="secondSection__container">
+                    <h2 class="secondSection__logo">Industry</h2>
+                    <p class="secondSection__text">Problems trying to resolve the conflict between 
+                        the two major realms of Classical physics: Newtonian mechanics </p>
+                <div class="secondSection__blocks">
+                    <div class="firstBlock">
+                        <div class="firstBlock__prewiev">
+                            <img class="firstBlock__img" src="img/icn-circle circle-md primary-color.png" alt="Business & Finance ">
+                            <h5 class="firstBlock__logo">Business & Finance </h5>
+                        </div>
+                        <div class="firstBlock__text">
+                            <p class="firstBlock__point">- The best products start with Figma</p>
+                            <p class="firstBlock__point">- Design with real data</p>
+                            <p class="firstBlock__point">- Lightning fast prototyping</p>
+                            <p class="firstBlock__point">- Fastest way to organize</p>
+                            <p class="firstBlock__point">- Work at the speed of thought</p>
+                            <a class="firstBlock__point" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="firstBlock">
+                        <div class="firstBlock__prewiev">
+                            <img class="firstBlock__img" src="img/icn-circle circle-md primary-color (1).png" alt="Travel & Aviation">
+                            <h5 class="firstBlock__logo">Travel & Aviation</h5>
+                        </div>
+                        <div class="firstBlock__text">
+                            <p class="firstBlock__point">- The best products start with Figma</p>
+                            <p class="firstBlock__point">- Design with real data</p>
+                            <p class="firstBlock__point">- Lightning fast prototyping</p>
+                            <p class="firstBlock__point">- Fastest way to organize</p>
+                            <p class="firstBlock__point">- Work at the speed of thought</p>
+                            <a class="firstBlock__point" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="firstBlock">
+                        <div class="firstBlock__prewiev">
+                            <img class="firstBlock__img" src="img/icn-circle circle-md primary-color (2).png" alt="Financial Services">
+                            <h5 class="firstBlock__logo">Financial Services</h5>
+                        </div>
+                        <div class="firstBlock__text">
+                            <p class="firstBlock__point">- The best products start with Figma</p>
+                            <p class="firstBlock__point">- Design with real data</p>
+                            <p class="firstBlock__point">- Lightning fast prototyping</p>
+                            <p class="firstBlock__point">- Fastest way to organize</p>
+                            <p class="firstBlock__point">- Work at the speed of thought</p>
+                            <a class="firstBlock__point" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
