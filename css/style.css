@@ -18,7 +18,7 @@ body{
 }
 
 .bg__firstContainer {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -255,8 +255,10 @@ body{
     line-height: 57px;
     letter-spacing: 0.2px;
     color: #252B42;
+    margin-bottom: 10px;
 }
 .secondSection__text{
+    max-width: 500px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -265,6 +267,8 @@ body{
     text-align: center;
     letter-spacing: 0.2px;
     color: #737373;
+    padding-bottom: 80px;
+    margin: 0px;
 }
 .secondSection__blocks{
     display: flex;
@@ -279,7 +283,7 @@ body{
     border-radius: 10px;
 }
 .firstBlock__text{
-    /* width: 328px; */      /*Как тут ограничить ширину*/
+    width: 328px;                 /*Как тут ограничить ширину иначе*/
     background: #FFFFFF;
     border: 1px solid #A9D6FF;
     border-radius: 11px;
@@ -311,4 +315,15 @@ body{
 .firstBlock__point{
     margin: 0px;
     padding-bottom: 5px;
+    text-align: left;
+}
+.firstBlock__link{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FF7B47;
 }
