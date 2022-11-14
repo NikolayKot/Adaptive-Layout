@@ -1,7 +1,6 @@
 @media (max-width: 425px){
     .container{
         width: 100%;
-        width: 412px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -10,14 +9,13 @@
         width: 100%;
     }
     .bg__firstContainer{
-        width: 100%;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 425px){
     .secondSection__blocks{
         width: 100%;
-        width: 412px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -26,27 +24,26 @@
 
 @media (max-width: 425px){
     .firstSection__container{
-        max-width: 412px;
+        max-width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
     .buttons{
+        margin-top: 40px;
         max-width: 412px;
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    .firstSection__logo{
-        padding: 0px 112px;
-    }
     .firstSection__text{
         padding: 0px 19px;
         text-align: center;
     }
     .second__button{
-        padding: 20px 130px 80px 130px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
     .button__two{
         padding: 10px 36px;
@@ -54,7 +51,7 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 768px){
     .secondSection__blocks{
         gap: 30px;
     }
@@ -62,13 +59,13 @@
         padding: 0px 94.5px 75px 94.5px;
     }
 }
-
-@media (max-width: 900px){
-    .header{
-        width: 800px;                              /* почему у хедер ширина больше чем у bg first container */
-        display: flex;
-        justify-content: space-between;
+@media (max-width: 425px) {
+    .firstSection__logo{
+        margin: 48px 78px;
     }
+}
+
+@media (max-width: 768px){
     .header__burger{
         display: block;
         position: relative;
@@ -84,6 +81,7 @@
     width: 100%;
     height: 2px;
     left: 0;
+    transition: all 0.3s ease 0s;
    }
    .header__burger:before{
     top: 0;
@@ -98,23 +96,32 @@
     height: 2px;
     left: 0;
     top: 9px;
+    transition: all 0.3s ease 0s;
    }
    .header__nav{
-    padding-top: 50px;
+    margin-top: 25px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: flex-start;
     position: fixed;
-    top: 0;
+    top: -120%;
     left: 0;
     width: 100%;
+    overflow: auto;
     background-color: white;
+    transition: all 0.5s ease 0s;
+   }
+   .header__nav.active{
+    top: 0;
    }
    .header__logo{
     z-index: 3;
+    display: flex;
    }
    .header__icon{
-    color: white;
-    height: 1px;
+        display: none;
    }
-}
+   body.lock{
+    overflow: hidden;
+   }
+} 

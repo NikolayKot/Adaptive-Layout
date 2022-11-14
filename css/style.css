@@ -9,6 +9,14 @@ body{
 /* .background__img{
     width: 100%;
 } */
+.header_container{
+    max-width: 1050px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container{
     max-width: 1050px;
     width: 100%;
@@ -132,7 +140,7 @@ body{
 .select{
     width: 100%;
     background: #F9F9F9;
-    border: 1px solid #BDBDBD;      /*Как подвинуть стрелочку?*/
+    border: 1px solid #BDBDBD;     
     border-radius: 5px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -282,11 +290,11 @@ body{
     border-radius: 10px;
 }
 .firstBlock__text{
-    width: 328px;                 /*Как тут ограничить ширину иначе*/
+    width: 100%;                 /*Как тут ограничить ширину иначе*/
     background: #FFFFFF;
     border: 1px solid #A9D6FF;
     border-radius: 11px;
-    padding: 30px 44px 25px 50px;
+    padding: 25px 25px 25px 25px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -325,4 +333,19 @@ body{
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #FF7B47;
+}
+.firstBlock__link:hover{
+    text-decoration: underline;
+}
+
+.header__burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+}
+.header__burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+} 
+.header__burger.active span{
+    transform: scale(0);
 }
